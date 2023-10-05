@@ -1,0 +1,413 @@
+/* login/signup
+body {
+	background: linear-gradient(to bottom, #0B486B, #7FA8CF);
+	font-family: Arial, sans-serif;
+	background-size:auto;
+	background-repeat: no-repeat;
+	height:100vh;
+	width:100vw;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: bold;
+}
+
+h1 {
+	font-size: 36px;
+	margin-top: 50px;
+	color: white;
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+h2 {
+	font-size: 28px;
+	margin-top: 30px;
+	margin-bottom: 10px;
+}
+label {
+	font-weight: bold;
+}
+p {
+	text-align: center;
+	font-size: 18px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+form {
+	background-color: #FFFFFF;
+	max-width: 500px;
+	margin: 0 auto;
+	padding: 30px;
+	border-radius: 10px;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.textbox {
+	position: relative;
+	margin-bottom: 20px;
+}
+
+.textbox i {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	left: 10px;
+	color: #999999;
+}
+
+.textbox input {
+	width: 100%;
+	padding: 10px;
+	font-size: 16px;
+	border: none;
+	border-bottom: 1px solid #999999;
+	outline: none;
+	background-color: transparent;
+}
+
+.btn {
+	display: block;
+	width: 100%;
+	padding: 10px;
+	margin-top: 20px;
+	border: none;
+	background-color: #0B486B;
+	color: #FFFFFF;
+	font-size: 18px;
+	font-weight: bold;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.btn:hover {
+	background-color: #7FA8CF;
+}*/
+
+/*inventory start*/
+/* html{
+  height: 100%;
+} */
+
+:root{
+  --blue: #093B93;
+  --red: #EE2224;
+  --white: #ffff;
+  --orange: #cf560d;
+  --black: #000000;
+  --light-gray: #D9D9D9;
+	--gray: #6c757d;
+}
+
+body{
+  height: 100%;
+}
+
+.purchasing-container{
+  margin-left:280px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.po_info{
+  display: flex;
+  flex-direction: column;
+}
+
+.po_info label{
+  margin: 10px 0;
+}
+
+.po_info input[type="submit"]{
+  margin-top: 10px;
+}
+
+.dropdown-menu li{
+	padding-left: 6px;
+}
+.tots{
+	margin-left:2px;
+	border: solid 1px black;
+	padding:2px;
+	width:140px;
+	height:30px;
+	text-align:center;
+	font-size:15px;
+}
+.inline{
+	display: flex;
+  align-items: center;
+}
+.search-bar {
+  display: flex;
+  align-items: center;
+}
+
+.search-bar input[type="text"] {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  flex-grow: 1;
+}
+
+.search-bar button {
+  padding: 8px 16px;
+  margin-left: 8px;
+	background-color: var(--gray);
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.expand{
+	border:none;
+}
+.acc{
+	background-color:green;
+	color:white;
+	border:none;
+	margin:2px;
+}
+.dec{
+	background-color:red;
+	color:white;
+	border:none;
+	margin:2px;
+}
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+.tab button:hover {
+  background-color: #ddd;
+}
+.tab button.active {
+  background-color: #ccc;
+}
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+.step {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbbbbb;
+  border: none;  
+  border-radius: 50%;
+  display: inline-block;
+  opacity: 0.5;
+}
+.step.active {
+  opacity: 1;
+}
+.step.finish {
+  background-color: #04AA6D;
+}
+.container1{
+	display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.square{
+	background-color:#D3D3D3;
+	padding:35px;
+	height:auto;
+	width:60vw;
+}
+.inline{
+	display: flex;
+  align-items: center;
+}
+.inline input{
+	margin-left:5px;
+}
+.inline select{
+	margin-left:5px;
+	width:120px;
+}
+.continue{
+	background-color:gray;
+	color:white;
+	float:right;
+	width:160px;
+	border-radius:5px;
+	border:none;
+	padding:20px;
+}
+.form-control admin {
+	margin-top:4px;
+	margin-bottom:5px;
+	width: 48%;
+	border-color: black;
+    font-size: 14px;
+}
+.select2{
+	height:40px;
+  font-size: 14px;
+}
+
+/*inventory end */
+
+
+.login-box h1, h2, h3, h4, h5, h6, 
+.signup-box h1, h2, h3, h4, h5, h6 {
+	font-weight: bold;
+}
+
+.login-box h1, 
+.signup-box h1 {
+	font-size: 36px;
+	margin-top: 50px;
+	color: white;
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+.login-box h2, 
+.signup-box h2 {
+	font-size: 28px;
+	margin-top: 30px;
+	margin-bottom: 10px;
+}
+
+.login-box label, 
+.signup-box label {
+	font-weight: bold;
+}
+
+.login-box p, 
+.signup-box p {
+	text-align: center;
+	font-size: 18px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.login-box form, 
+.signup-box form {
+	background-color: #FFFFFF;
+	max-width: 500px;
+	margin: 0 auto;
+	padding: 30px;
+	border-radius: 10px;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.login-box .textbox,
+.signup-box .textbox {
+	position: relative;
+	margin-bottom: 20px;
+}
+
+.login-box .textbox i, 
+.signup-box .textbox i {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	left: 10px;
+	color: #999999;
+}
+
+.login-box .textbox input, 
+.signup-box .textbox input {
+	width: 100%;
+	padding: 10px;
+	font-size: 16px;
+	border: none;
+	border-bottom: 1px solid #999999;
+	outline: none;
+	background-color: transparent;
+}
+
+.login-box .btn, 
+.signup-box .btn {
+	display: block;
+	width: 100%;
+	padding: 10px;
+	margin-top: 20px;
+	border: none;
+	background-color: #0B486B;
+	color: #FFFFFF;
+	font-size: 18px;
+	font-weight: bold;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.login-box .btn:hover, 
+.signup-box .btn:hover {
+	background-color: #7FA8CF;
+}
+
+.colbig{
+	max-width:30%;
+	column-width:30%;
+}
+button,.search-bar{
+	margin:5px;
+}
+.thead-dark{
+	background-color:black;
+	color:white;
+	text-align:center;
+}
+.btn.btn-secondary a{
+	text-decoration: none;
+	color: var(--white);
+}
+
+.action-careers{
+	display: flex;
+}
+
+@media (min-width: 1200px){
+	.container.careers {
+			max-width: 990px;
+	}
+}
+
+.action-careers button {
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.action-careers .edit {
+  background-color: #4CAF50; 
+  border: 2px solid #4CAF50;
+}
+
+.action-careers .edit a{
+	color: var(--white);
+	text-decoration: none;
+}
+
+.action-careers .delete{
+	background-color: var(--red); 
+  border: 2px solid var(--red);
+	color: var(--white);
+}
